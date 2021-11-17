@@ -1,0 +1,180 @@
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\ClubTournamentMVC.dll.config
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\ClubTournamentMVC.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\ClubTournamentMVC.pdb
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\roslyn\csc.exe
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\roslyn\csc.exe.config
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\roslyn\csc.rsp
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\roslyn\csi.exe
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\roslyn\csi.exe.config
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\roslyn\csi.rsp
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\roslyn\System.AppContext.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\roslyn\System.Console.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\roslyn\System.IO.Compression.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\roslyn\System.Net.Http.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\roslyn\System.Net.Sockets.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\roslyn\System.ValueTuple.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\roslyn\System.Xml.XPath.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\roslyn\vbc.exe
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\roslyn\vbc.exe.config
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\roslyn\vbc.rsp
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\roslyn\VBCSCompiler.exe
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\Antlr3.Runtime.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\EntityFramework.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\EntityFramework.SqlServer.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\Newtonsoft.Json.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\System.Web.Helpers.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\System.Web.Mvc.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\System.Web.Optimization.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\System.Web.Razor.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\System.Web.WebPages.Deployment.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\System.Web.WebPages.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\System.Web.WebPages.Razor.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\WebGrease.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\EntityFramework.xml
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\EntityFramework.SqlServer.xml
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\System.Web.Helpers.xml
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\System.Web.Mvc.xml
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\System.Web.Optimization.xml
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\System.Web.Razor.xml
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\System.Web.WebPages.xml
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\System.Web.WebPages.Deployment.xml
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\System.Web.WebPages.Razor.xml
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\Newtonsoft.Json.xml
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\Antlr3.Runtime.pdb
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\es\System.Web.Helpers.resources.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\es\System.Web.Mvc.resources.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\es\System.Web.Optimization.resources.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\es\System.Web.Razor.resources.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\es\System.Web.WebPages.resources.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\obj\Debug\ClubTournamentMVC.csprojAssemblyReference.cache
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\obj\Debug\ClubTournamentMVC.csproj.CoreCompileInputs.cache
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\obj\Debug\ClubTournamentMVC.csproj.CopyComplete
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\obj\Debug\ClubTournamentMVC.dll
+C:\Users\IGNITER\source\repos\ClubTournamentMVC\obj\Debug\ClubTournamentMVC.pdb
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\ClubTournamentMVC.dll.config
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\ClubTournamentMVC.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\ClubTournamentMVC.pdb
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\roslyn\csc.exe
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\roslyn\csc.exe.config
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\roslyn\csc.rsp
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\roslyn\csi.exe
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\roslyn\csi.exe.config
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\roslyn\csi.rsp
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\roslyn\System.AppContext.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\roslyn\System.Console.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\roslyn\System.IO.Compression.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\roslyn\System.Net.Http.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\roslyn\System.Net.Sockets.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\roslyn\System.ValueTuple.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\roslyn\System.Xml.XPath.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\roslyn\vbc.exe
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\roslyn\vbc.exe.config
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\roslyn\vbc.rsp
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\roslyn\VBCSCompiler.exe
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\Antlr3.Runtime.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\EntityFramework.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\EntityFramework.SqlServer.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\Newtonsoft.Json.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\System.Web.Helpers.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\System.Web.Mvc.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\System.Web.Optimization.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\System.Web.Razor.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\System.Web.WebPages.Deployment.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\System.Web.WebPages.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\System.Web.WebPages.Razor.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\WebGrease.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\EntityFramework.xml
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\EntityFramework.SqlServer.xml
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\System.Web.Helpers.xml
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\System.Web.Mvc.xml
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\System.Web.Optimization.xml
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\System.Web.Razor.xml
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\System.Web.WebPages.xml
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\System.Web.WebPages.Deployment.xml
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\System.Web.WebPages.Razor.xml
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\Newtonsoft.Json.xml
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\Antlr3.Runtime.pdb
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\es\System.Web.Helpers.resources.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\es\System.Web.Mvc.resources.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\es\System.Web.Optimization.resources.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\es\System.Web.Razor.resources.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\es\System.Web.WebPages.resources.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\obj\Debug\ClubTournamentMVC.csproj.AssemblyReference.cache
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\obj\Debug\ClubTournamentMVC.csproj.CoreCompileInputs.cache
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\obj\Debug\ClubTournamentMVC.csproj.CopyComplete
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\obj\Debug\ClubTournamentMVC.dll
+C:\Users\jona_\OneDrive\Documentos\4C DSM\Diseño de Apps\ClubTournamentMVC\obj\Debug\ClubTournamentMVC.pdb

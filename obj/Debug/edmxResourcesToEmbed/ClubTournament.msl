@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ClubTournamentModelStoreContainer" CdmEntityContainer="ClubTournamentEntities">
+    <EntitySetMapping Name="Clubes">
+      <EntityTypeMapping TypeName="ClubTournamentModel.Clubes">
+        <MappingFragment StoreEntitySet="Clubes">
+          <ScalarProperty Name="idClub" ColumnName="idClub" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Dirección" ColumnName="Dirección" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Geoubicacion" ColumnName="Geoubicacion" />
+          <ScalarProperty Name="Dias_Laborales" ColumnName="Dias_Laborales" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Discipline">
+      <EntityTypeMapping TypeName="ClubTournamentModel.Discipline">
+        <MappingFragment StoreEntitySet="Discipline">
+          <ScalarProperty Name="idDiscipline" ColumnName="idDiscipline" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Servicios">
+      <EntityTypeMapping TypeName="ClubTournamentModel.Servicios">
+        <MappingFragment StoreEntitySet="Servicios">
+          <ScalarProperty Name="idService" ColumnName="idService" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Num_Personas" ColumnName="Num_Personas" />
+          <ScalarProperty Name="EquipoEspecial" ColumnName="EquipoEspecial" />
+          <ScalarProperty Name="EquipoEspecialDescripction" ColumnName="EquipoEspecialDescripction" />
+          <ScalarProperty Name="PersonasDiscapacitadas" ColumnName="PersonasDiscapacitadas" />
+          <ScalarProperty Name="ClubId" ColumnName="ClubId" />
+          <ScalarProperty Name="DisciplineId" ColumnName="DisciplineId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

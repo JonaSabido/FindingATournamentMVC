@@ -1,0 +1,34 @@
+﻿@model IEnumerable<ClubTournamentMVC.Discipline>
+
+@{
+    ViewBag.Title = "Disciplina";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<a class="btn btn-success"
+    @Html.ActionLink("Crear nueva disciplina", "Create")
+</a>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nombre)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.idDiscipline }) |
+            @Html.ActionLink("Details", "Details", new { id=item.idDiscipline }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.idDiscipline })
+        </td>
+    </tr>
+}
+
+</table>

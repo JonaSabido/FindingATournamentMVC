@@ -1,0 +1,70 @@
+﻿@model IEnumerable<ClubTournamentMVC.Servicios>
+
+@{
+    ViewBag.Title = "Servicios";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<a class="btn btn-success"
+    @Html.ActionLink("Crear nuevo servicio", "Create")
+</a>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Num_Personas)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EquipoEspecial)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EquipoEspecialDescripction)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PersonasDiscapacitadas)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Clubes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Discipline)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Num_Personas)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EquipoEspecial)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EquipoEspecialDescripction)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PersonasDiscapacitadas)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Clubes.Nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Discipline.Nombre)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.idService }) |
+            @Html.ActionLink("Details", "Details", new { id=item.idService }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.idService })
+        </td>
+    </tr>
+}
+
+</table>

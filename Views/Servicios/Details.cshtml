@@ -1,0 +1,75 @@
+﻿@model ClubTournamentMVC.Servicios
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Servicios</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Num_Personas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Num_Personas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EquipoEspecial)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EquipoEspecial)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EquipoEspecialDescripction)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EquipoEspecialDescripction)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PersonasDiscapacitadas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PersonasDiscapacitadas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Clubes.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Clubes.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Discipline.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Discipline.Nombre)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.idService }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

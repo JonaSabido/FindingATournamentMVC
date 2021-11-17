@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="ClubTournamentModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Clubes">
+          <Key>
+            <PropertyRef Name="idClub" />
+          </Key>
+          <Property Name="idClub" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nombre" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Dirección" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="Telefono" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Geoubicacion" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="Dias_Laborales" Type="varchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Discipline">
+          <Key>
+            <PropertyRef Name="idDiscipline" />
+          </Key>
+          <Property Name="idDiscipline" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Servicios">
+          <Key>
+            <PropertyRef Name="idService" />
+          </Key>
+          <Property Name="idService" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Num_Personas" Type="int" Nullable="false" />
+          <Property Name="EquipoEspecial" Type="bit" Nullable="false" />
+          <Property Name="EquipoEspecialDescripction" Type="varchar(max)" />
+          <Property Name="PersonasDiscapacitadas" Type="bit" Nullable="false" />
+          <Property Name="ClubId" Type="int" Nullable="false" />
+          <Property Name="DisciplineId" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Club_Id">
+          <End Role="Clubes" Type="Self.Clubes" Multiplicity="1" />
+          <End Role="Servicios" Type="Self.Servicios" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Clubes">
+              <PropertyRef Name="idClub" />
+            </Principal>
+            <Dependent Role="Servicios">
+              <PropertyRef Name="ClubId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Discipline_Id">
+          <End Role="Discipline" Type="Self.Discipline" Multiplicity="1" />
+          <End Role="Servicios" Type="Self.Servicios" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Discipline">
+              <PropertyRef Name="idDiscipline" />
+            </Principal>
+            <Dependent Role="Servicios">
+              <PropertyRef Name="DisciplineId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="ClubTournamentModelStoreContainer">
+          <EntitySet Name="Clubes" EntityType="Self.Clubes" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Discipline" EntityType="Self.Discipline" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Servicios" EntityType="Self.Servicios" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Club_Id" Association="Self.FK_Club_Id">
+            <End Role="Clubes" EntitySet="Clubes" />
+            <End Role="Servicios" EntitySet="Servicios" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Discipline_Id" Association="Self.FK_Discipline_Id">
+            <End Role="Discipline" EntitySet="Discipline" />
+            <End Role="Servicios" EntitySet="Servicios" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ClubTournamentModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Clubes">
+          <Key>
+            <PropertyRef Name="idClub" />
+          </Key>
+          <Property Name="idClub" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Dirección" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Geoubicacion" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Dias_Laborales" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Servicios" Relationship="Self.FK_Club_Id" FromRole="Clubes" ToRole="Servicios" />
+        </EntityType>
+        <EntityType Name="Discipline">
+          <Key>
+            <PropertyRef Name="idDiscipline" />
+          </Key>
+          <Property Name="idDiscipline" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Servicios" Relationship="Self.FK_Discipline_Id" FromRole="Discipline" ToRole="Servicios" />
+        </EntityType>
+        <EntityType Name="Servicios">
+          <Key>
+            <PropertyRef Name="idService" />
+          </Key>
+          <Property Name="idService" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Num_Personas" Type="Int32" Nullable="false" />
+          <Property Name="EquipoEspecial" Type="Boolean" Nullable="false" />
+          <Property Name="EquipoEspecialDescripction" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="PersonasDiscapacitadas" Type="Boolean" Nullable="false" />
+          <Property Name="ClubId" Type="Int32" Nullable="false" />
+          <Property Name="DisciplineId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Clubes" Relationship="Self.FK_Club_Id" FromRole="Servicios" ToRole="Clubes" />
+          <NavigationProperty Name="Discipline" Relationship="Self.FK_Discipline_Id" FromRole="Servicios" ToRole="Discipline" />
+        </EntityType>
+        <Association Name="FK_Club_Id">
+          <End Role="Clubes" Type="Self.Clubes" Multiplicity="1" />
+          <End Role="Servicios" Type="Self.Servicios" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Clubes">
+              <PropertyRef Name="idClub" />
+            </Principal>
+            <Dependent Role="Servicios">
+              <PropertyRef Name="ClubId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Discipline_Id">
+          <End Role="Discipline" Type="Self.Discipline" Multiplicity="1" />
+          <End Role="Servicios" Type="Self.Servicios" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Discipline">
+              <PropertyRef Name="idDiscipline" />
+            </Principal>
+            <Dependent Role="Servicios">
+              <PropertyRef Name="DisciplineId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="ClubTournamentEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Clubes" EntityType="Self.Clubes" />
+          <EntitySet Name="Discipline" EntityType="Self.Discipline" />
+          <EntitySet Name="Servicios" EntityType="Self.Servicios" />
+          <AssociationSet Name="FK_Club_Id" Association="Self.FK_Club_Id">
+            <End Role="Clubes" EntitySet="Clubes" />
+            <End Role="Servicios" EntitySet="Servicios" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Discipline_Id" Association="Self.FK_Discipline_Id">
+            <End Role="Discipline" EntitySet="Discipline" />
+            <End Role="Servicios" EntitySet="Servicios" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ClubTournamentModelStoreContainer" CdmEntityContainer="ClubTournamentEntities">
+          <EntitySetMapping Name="Clubes">
+            <EntityTypeMapping TypeName="ClubTournamentModel.Clubes">
+              <MappingFragment StoreEntitySet="Clubes">
+                <ScalarProperty Name="idClub" ColumnName="idClub" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Dirección" ColumnName="Dirección" />
+                <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+                <ScalarProperty Name="Geoubicacion" ColumnName="Geoubicacion" />
+                <ScalarProperty Name="Dias_Laborales" ColumnName="Dias_Laborales" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Discipline">
+            <EntityTypeMapping TypeName="ClubTournamentModel.Discipline">
+              <MappingFragment StoreEntitySet="Discipline">
+                <ScalarProperty Name="idDiscipline" ColumnName="idDiscipline" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Servicios">
+            <EntityTypeMapping TypeName="ClubTournamentModel.Servicios">
+              <MappingFragment StoreEntitySet="Servicios">
+                <ScalarProperty Name="idService" ColumnName="idService" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Num_Personas" ColumnName="Num_Personas" />
+                <ScalarProperty Name="EquipoEspecial" ColumnName="EquipoEspecial" />
+                <ScalarProperty Name="EquipoEspecialDescripction" ColumnName="EquipoEspecialDescripction" />
+                <ScalarProperty Name="PersonasDiscapacitadas" ColumnName="PersonasDiscapacitadas" />
+                <ScalarProperty Name="ClubId" ColumnName="ClubId" />
+                <ScalarProperty Name="DisciplineId" ColumnName="DisciplineId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

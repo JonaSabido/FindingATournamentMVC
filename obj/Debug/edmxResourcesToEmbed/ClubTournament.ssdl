@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ClubTournamentModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Clubes">
+    <Key>
+      <PropertyRef Name="idClub" />
+    </Key>
+    <Property Name="idClub" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Dirección" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="Telefono" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Geoubicacion" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="Dias_Laborales" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Discipline">
+    <Key>
+      <PropertyRef Name="idDiscipline" />
+    </Key>
+    <Property Name="idDiscipline" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Servicios">
+    <Key>
+      <PropertyRef Name="idService" />
+    </Key>
+    <Property Name="idService" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Num_Personas" Type="int" Nullable="false" />
+    <Property Name="EquipoEspecial" Type="bit" Nullable="false" />
+    <Property Name="EquipoEspecialDescripction" Type="varchar(max)" />
+    <Property Name="PersonasDiscapacitadas" Type="bit" Nullable="false" />
+    <Property Name="ClubId" Type="int" Nullable="false" />
+    <Property Name="DisciplineId" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Club_Id">
+    <End Role="Clubes" Type="Self.Clubes" Multiplicity="1" />
+    <End Role="Servicios" Type="Self.Servicios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clubes">
+        <PropertyRef Name="idClub" />
+      </Principal>
+      <Dependent Role="Servicios">
+        <PropertyRef Name="ClubId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Discipline_Id">
+    <End Role="Discipline" Type="Self.Discipline" Multiplicity="1" />
+    <End Role="Servicios" Type="Self.Servicios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Discipline">
+        <PropertyRef Name="idDiscipline" />
+      </Principal>
+      <Dependent Role="Servicios">
+        <PropertyRef Name="DisciplineId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ClubTournamentModelStoreContainer">
+    <EntitySet Name="Clubes" EntityType="Self.Clubes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Discipline" EntityType="Self.Discipline" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Servicios" EntityType="Self.Servicios" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Club_Id" Association="Self.FK_Club_Id">
+      <End Role="Clubes" EntitySet="Clubes" />
+      <End Role="Servicios" EntitySet="Servicios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Discipline_Id" Association="Self.FK_Discipline_Id">
+      <End Role="Discipline" EntitySet="Discipline" />
+      <End Role="Servicios" EntitySet="Servicios" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

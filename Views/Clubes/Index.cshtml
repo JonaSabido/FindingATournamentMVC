@@ -1,0 +1,58 @@
+﻿@model IEnumerable<ClubTournamentMVC.Clubes>
+
+@{
+    ViewBag.Title = "Clubes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<a class="btn btn-success"
+    @Html.ActionLink("Crear nuevo club", "Create")
+</a>
+<table class="table table-hover">
+    <tr class="table-dark">
+        <th>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Dirección)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Telefono)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Geoubicacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Dias_Laborales)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Dirección)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Telefono)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Geoubicacion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Dias_Laborales)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.idClub }) |
+            @Html.ActionLink("Details", "Details", new { id=item.idClub }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.idClub })
+        </td>
+    </tr>
+}
+
+</table>

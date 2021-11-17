@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ClubTournamentModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Clubes">
+    <Key>
+      <PropertyRef Name="idClub" />
+    </Key>
+    <Property Name="idClub" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Dirección" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Geoubicacion" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Dias_Laborales" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Servicios" Relationship="Self.FK_Club_Id" FromRole="Clubes" ToRole="Servicios" />
+  </EntityType>
+  <EntityType Name="Discipline">
+    <Key>
+      <PropertyRef Name="idDiscipline" />
+    </Key>
+    <Property Name="idDiscipline" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Servicios" Relationship="Self.FK_Discipline_Id" FromRole="Discipline" ToRole="Servicios" />
+  </EntityType>
+  <EntityType Name="Servicios">
+    <Key>
+      <PropertyRef Name="idService" />
+    </Key>
+    <Property Name="idService" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Num_Personas" Type="Int32" Nullable="false" />
+    <Property Name="EquipoEspecial" Type="Boolean" Nullable="false" />
+    <Property Name="EquipoEspecialDescripction" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="PersonasDiscapacitadas" Type="Boolean" Nullable="false" />
+    <Property Name="ClubId" Type="Int32" Nullable="false" />
+    <Property Name="DisciplineId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Clubes" Relationship="Self.FK_Club_Id" FromRole="Servicios" ToRole="Clubes" />
+    <NavigationProperty Name="Discipline" Relationship="Self.FK_Discipline_Id" FromRole="Servicios" ToRole="Discipline" />
+  </EntityType>
+  <Association Name="FK_Club_Id">
+    <End Role="Clubes" Type="Self.Clubes" Multiplicity="1" />
+    <End Role="Servicios" Type="Self.Servicios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clubes">
+        <PropertyRef Name="idClub" />
+      </Principal>
+      <Dependent Role="Servicios">
+        <PropertyRef Name="ClubId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Discipline_Id">
+    <End Role="Discipline" Type="Self.Discipline" Multiplicity="1" />
+    <End Role="Servicios" Type="Self.Servicios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Discipline">
+        <PropertyRef Name="idDiscipline" />
+      </Principal>
+      <Dependent Role="Servicios">
+        <PropertyRef Name="DisciplineId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ClubTournamentEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Clubes" EntityType="Self.Clubes" />
+    <EntitySet Name="Discipline" EntityType="Self.Discipline" />
+    <EntitySet Name="Servicios" EntityType="Self.Servicios" />
+    <AssociationSet Name="FK_Club_Id" Association="Self.FK_Club_Id">
+      <End Role="Clubes" EntitySet="Clubes" />
+      <End Role="Servicios" EntitySet="Servicios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Discipline_Id" Association="Self.FK_Discipline_Id">
+      <End Role="Discipline" EntitySet="Discipline" />
+      <End Role="Servicios" EntitySet="Servicios" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
